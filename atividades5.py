@@ -1,3 +1,5 @@
+esse aqui foi até aonde eu consegui ir durante a aula
+
 valor= 150
 desconto = 20
 resultado = 130
