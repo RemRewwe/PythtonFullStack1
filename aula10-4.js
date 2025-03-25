@@ -1,23 +1,30 @@
-function somarMatrizes(tarefa1, tarefa2) {
-    for (let i = 0; i < matriz1.length; i++) {
-        let somaLinha = [];
-        for (let j = 0; j < matriz1[i].length; j++) {
-            somaLinha.push(matriz1[i][j] + matriz2[i][j]);
-        }
-        console.log(somaLinha.join(' '));
-    }
-}
+// 1
 
-let tarefa1 = [
+let matriz1 = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
 ];
 
-let tarefa2 = [
-    [9, 8, 7],
-    [6, 5, 4],
-    [3, 2, 1]
+let matriz2 = [
+    [1, 1, 1],
+    [1, 1, 1],
+    [1, 1, 1]
 ];
 
-somarMatrizes(tarefa1, tarefa2);
+function somarMatrizes(matriz1, matriz2) {
+    let resultado = [];
+    for (let i = 0;  i < 3; i++) {
+        let resultado2 = [];
+        for (let j = 0; j < 3; j++) {
+
+            resultado2.push(matriz1[i][j] + matriz2[i][j]);
+        }
+        resultado.push(resultado2)
+    }
+
+    return resultado;
+}
+
+let somaFinal = somarMatrizes(matriz1, matriz2);
+console.log(somaFinal);
