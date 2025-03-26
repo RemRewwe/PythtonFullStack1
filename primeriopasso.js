@@ -126,3 +126,6 @@ let personagem1 = escolherClasse(nomePersonagem1);
 let personagem2 = escolherClasse(nomePersonagem2);
 
 batalha(personagem1, personagem2);
+
+
+//estranhamente o codigo não funcionou no VS code, mas funcionou no playcode.io, JSfiddle, Web Toolkit Online
